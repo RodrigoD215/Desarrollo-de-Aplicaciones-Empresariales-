@@ -1,0 +1,60 @@
+Desarrollo de Aplicaciones Empresariales
+Laboratorio 03
+
+
+Alumno: Rodrigo Dueñas del Carpio
+Grupo: A
+
+1. CREANDO CONTROLADORES
+
+2. CREANDO RUTAS EN LARAVEL 
+
+   2.3     Prueba del Index de la aplicación. (Captura Adjunta: 2.3.JPG )
+   2.V.8   Probando la ruta para Validado Parte 8. (Captura Adjunta: 2.V.8.JPG )
+   2.V.9   Probando la ruta para Inicio. (Captura Adjunta: 2.V.9.JPG )
+   2.V.1.F Probando la ruta para Fotos. (Captura Adjunta: 2.V.1.F.JPG )		
+   2.V.1.F Probando la ruta para Crear Fotos. (Captura Adjunta: 2.V.1.CF.JPG )
+   2.V.1.I Probando la ruta para un URL Inexistente. (Captura Adjunta: 2.V.1.I.JPG )
+
+3. CREANDO LAS PRIMERAS VISTAS 
+
+   3.FC   Probando la Funcionalidad del codigo. (Captura Adjunta: 3.FC.JPG )
+   3.FC.2 Probando la Funcionalidad del codigo. (Captura Adjunta: 3.FC.2.IS.JPG )
+   3.FC.2 Probando la Funcionalidad del codigo. (Captura Adjunta: 3.FC.2.R.JPG )
+
+   Creando las vistas
+   
+   3.11   Formulario Inicio. (Captura Adjunta: 3.11.I.JPG )
+   3.11   Formulario Registro. (Captura Adjunta: 3.11.R.JPG )
+
+   Creando Vista para recuperar la contraseña 
+
+   3VRC  Formulario Recuperar Contraseña. (Captura Adjunta: 3.RC.JPG )
+
+
+OBSERVACIONES Y CONCLUSIONES:
+
+OBSERVACIONES:
+   -En el punto 2.V.9 el link al que ingresamos no funcionara por que requerira que
+    comentemos la siguiente parte del codigo "$this->middleware('auth');" esto para 
+    que no pase por un link de autentificacion. (Captura Adjunta: Observacion 1.JPG )
+   -Al probar el link de "Gestorlaravel.com".Este hace referencia a la ruta: “/”, ya 
+    que en la carpeta, el controlador que responde es BienvenidaController, y el action 
+    por defecto a ejecutarse es: getIndex, ya que la página está siendo cargada por 
+    primera vez. 
+   -Las vistas que encontramos en "Gestor Imagenes" tienen un codigo HTML prediseñado 
+    una ves creado el proyecto.
+   -Al hacer uso de un "." dentro de un view en un retorno hace referencia a una carpeta.
+   -Para hacer referencia a una funcion especifica dentro de un controlador, debemos de 
+    hacer uso de "/" y fijarnos bien en las rutas que estamos usando.
+
+CONCLUSIONES:
+   -Se creo diferentes controladores con sus respectivas rutas.
+   -Al probar un link inexistente, se produce una excepción, sin embargo, no es un error 
+    404 (not found page).
+   -Aprendi a crear una interfaces para las exepciones.
+   -Se creo varias vistas y se medifico e agrego codigo para que esta se ajuste mejor a 
+    nuestras nesesidades.
+   -Renderizamos la vistas creadas retornando un "view("nombre");"
+   
+

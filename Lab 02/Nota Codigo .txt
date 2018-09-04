@@ -1,0 +1,4 @@
+Puesto que el codigo usado para este laboratorio a la fecha de hoy 04/09/2018. Ya fue modificado 
+devido al avance del Laboratorio 03.
+Este se encuentra adujunto en la carpeta "Lab 02 - Lab03" del presente repositorio. (con todas las 
+modificaciones de este.)
