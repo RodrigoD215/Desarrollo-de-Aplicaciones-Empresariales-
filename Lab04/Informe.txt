@@ -1,0 +1,128 @@
+Desarrollo de Aplicaciones Empresariales
+Laboratorio 04
+
+
+Alumno: Rodrigo Dueñas del Carpio
+Grupo: A
+
+Nota: Volvi a hacer todos los laboratorios desde cero en una maquina virtual con xamp, por lo
+cual las primeras imagenes son de mi GestorImagenes del presente laboratorio, estan trabajadas
+con wamp y las demas en xamp.
+
+1. CREANDO MIGRACIÓN DE MODELOS A LA BASE DE DATOS 
+
+   1.1-4  Creando migracion de tablas. (Captura Adjunta: 1.1-4.JPG )
+   1.1-6  Migración (Captura Adjunta: 1.1-6.JPG )
+   1.1-7  Verificacion de las tablas creadas en la BD. (Captura Adjunta: 1.1-7.JPG )
+
+
+2. CREANDO SEEDERS
+
+   2.8  Creando Seeders. (Captura Adjunta: 2.8.JPG )
+   
+	¿Qué sucedió? 
+	El codigo dentro de cada uno de nuestros Seeders fue ejecutado y lleno nuestra BD.
+	(Captura Adjunta: 2.8-1.JPG )
+
+
+3. CREANDO MENSAJES Y PÁGINAS DE EXCEPCIÓN PERSONALIZADAS 
+
+   1.2.B   Prueba de el formulario, pero eliminando el token con la función “inspeccionar 
+	   elemento” (Captura Adjunta: 1.2.B.JPG )
+
+
+4. ACCESO Y VALIDACIÓN DE USUARIOS
+
+	TAREA: INVESTIGUE INYECCIÓN POR DEPENDENCIA EN LARAVEL.
+	
+	¿Qué es la Inyección de Dependencias?
+	La Inyección de Dependencias es un patrón de diseño orientado a objetos en el que se 
+	suministran objetos a una clase en lugar de ser la propia clase quien cree el objeto. 
+	El término fue acuñado por primera vez por Martin Fowler. En la práctica, consiste en 
+	pasar a los componentes de software sus dependencias mediante sus constructores, sus 
+	propiedades o sus métodos setter. Así de sencillo.
+
+	Ventajas de usar la Inyección de Dependencias
+
+	Como ventajas podemos nombrar:
+
+   	-Nuestro código se vuelve más modular y menos acoplado, ya que los submódulos no 
+	 necesitan saber detalles de la implementación de otros en tu código.
+    	-Gracias a esta modularidad es que podemos hacer tests unitarios más fácilmente, cada 
+	 parte del programa se puede aislar porque para realizar pruebas no tenemos que proveer 
+	 a nuestros programas de las referencias reales, sino que podemos fingirlas mediante mocks.
+    	-La inyección de dependencias puede hacer que escribas código más rápido y te quita 
+	 preocupaciones de tener que instanciar objetos tu mismo.
+
+   4.7   ¿Cuáles fueron las credenciales utilizadas para acceder al sistema? 
+	 Usuario: email0@test.com
+	 Contraseña:pass0
+	 (Captura Adjunta: 4.7.JPG )
+   4.10  Registro (Captura Adjunta: 4.7.JPG )
+   4.11  Resultado registro (Captura Adjunta: 4.7.JPG )
+   4.12  Registro en la BD (Captura Adjunta: 4.7.JPG )
+
+
+5. MODIFICANDO EL REQUEST DEL INICIO DE SESION 
+
+6. CREANDO LA FUNCIONALIDAD PARA RECUPERAR LA CONTRASEÑA POR PARTE DEL USUARIO 
+
+	 ¿Cuál sería el proceso de crear un Request de nombre: “RecuperarContrasenaRequest”? 
+	 php artisan make:request RecuperarContrasenaRequest 
+
+	 
+ 	 Probando el código: 
+ 
+	 1. Intente recuperar la contraseña con un correo válido, dos contraseñas correctas (con más 
+	    de 5 caracteres), pero con pregunta y/o respuesta equivocada. Anote los resultados.
+ 
+	    La BD verifica los datos y no me permite crear la nueva contraseña, por lo cual me arroja 
+	    un mensaje erroneo.
+ 
+	 2. Intente recuperar la contraseña con todos los datos correctos. ¿Qué sucede? 
+	    
+	    Me redirige al inicio y me coloca un mensaje diciendome que el proseso fue exitoso.
+
+   6.8-1  Colocando datos correctos para la recuperacion de mi contraseña (Captura Adjunta: 6.8-1.JPG )
+   6.8-2  Mensaje de exito (Captura Adjunta: 6.8-2.JPG )
+
+
+OBSERVACIONES Y CONCLUSIONES:
+
+OBSERVACIONES:
+   -Se generaron gran variedad de errores al trabajar con wamp, todo lo contrario de el trabajo con xamp. 
+   -Se generaron datos mediante un codigo ubicado dentro de nuestros sedeers(los cuales fueron utiles para 
+    nuestras pruebas).
+   -La migracion de datos al momento de hacer uso de wamp fue un dolor de cabeza devido a que ya contabamos
+    con un MySQL nativo instalado por lo cual se cambiaron dependencias para usar este y no el que viene 
+    incluido en el wamp.
+   -Debemos de fijarnos bien en lo que se escribe, por que de no hacerlo se generaran errores muy confusos.
+   -Php es un lenguaje muy sucio debido a que no tiene una esctructura.
+
+CONCLUSIONES:
+   -Creamos Seeders en Laravel.
+   -Pasamos a los componentes del software sus dependencias mediante sus constructores y sus métodos setter.
+   -Logre la validación de Usuario.
+   -Se logro mandar un mensajer de error al haber una validación de usuario o recuperacion de contraseña incorrecta.
+   -Habilite la funcionalidad de recuperar contraseña por parte del usuario. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
