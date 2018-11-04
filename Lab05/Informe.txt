@@ -1,0 +1,65 @@
+Desarrollo de Aplicaciones Empresariales
+Laboratorio 05
+
+
+Alumno: Rodrigo Dueñas del Carpio
+Grupo: A
+
+1. CREANDO LA FUNCIONALIDAD: ACTUALIZAR PERFIL DE USUARIO 
+
+   1.7     Opción actualizar perfil.  (Captura Adjunta: 1.7.JPG )
+   1.14.1  Llenado de datos.  (Captura Adjunta: 1.14.1.JPG )
+   1.14.2  Actualizacion Exitosa.  (Captura Adjunta: 1.14.2.JPG ) 
+
+
+2. CREANDO LA FUNCIONALIDAD DE MOSTRAR ÁLBUMES 
+
+   2.6     Albumes de un Usuario.  (Captura Adjunta: 2.6.JPG )
+
+
+3. CREANDO LA FUNCIONALIDAD PARA MOSTRAR FOTOS 
+
+   3.8     Fotos dentro de un Album.  (Captura Adjunta: 3.8.JPG )
+   3.1-8   Intento de quiebre de la seguridad del sistema.   (Captura Adjunta: forbiden.JPG )
+
+
+OBSERVACIONES Y CONCLUSIONES:
+
+OBSERVACIONES:
+   -Se hiso uso de comandos para la creacion de Request para poder Editar Perfil.
+   -Los albumes y fotos creados anteriormente, nos colocaron fotos inexistentes(No podian ser visualizadas).
+   -Este laboratorio fue un poco menos complicado que los anteriores devido a que es corto y solo se implemento 
+    un par de funcionalidades a simple vista simples pero muy nesesarias.
+   -El proyecto aprobechaba poco los espacios.
+   -Todo programa que cuente con login debe de contener una funcionalidad de recuperar contraseña, puesto que 
+    nadie esta libre de olvidarsela. 
+
+CONCLUSIONES:
+   -Creamos la funcionalidad para Actualizar el perfil de Usuario.
+   -Creamos la funcionalidad para mostrar albumes y fotos de los usuarios.
+   -Se creo carpetas dentro de "Views" para mostrar las diferentes funcionalidades implementadas.
+   -La seguridad de nuestro sistema es relatiamente buena, puesto que al intentar ingresar a un link sacado 
+    del codigo fuente. Este nos arrojo solo un mensaje.
+   -En vista de que el proyecto aprovecha poco el espacio, decidi modicar un poco el codigo de las vistas para que 
+    se aproveche un poco mejor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
