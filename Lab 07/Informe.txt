@@ -1,0 +1,114 @@
+Desarrollo de Aplicaciones Empresariales
+Laboratorio 07
+
+
+Alumno: Rodrigo Dueñas del Carpio
+Grupo: A
+
+1. CREANDO LA FUNCIONALIDAD PARA EDITAR UN ÁLBUM.
+ 
+    1.5.P   ¿Qué hicimos al agregar esa línea? 
+   	    Agregamos un boton a los albumes, el cual nos redireccionara a la 
+            ruta colocada para poder editar el album.
+ 
+    1.9.P   ¿De qué se encarga la función authorize() en este Request? 
+            En la parte de authorize() se comprobará si el usuario está autorizado
+            a realizar esa request. Por ejemplo podrás comprobar si el usuario 
+            tiene los permisos adecuados, si aquello que intenta modificar le 
+            pertenece y cosas así.
+
+    1.12.P  ¿Qué se hizo en el código mostrado? 
+            Lo que hace esta funcion es enviar una funcion, la cual verificara el id,
+            nombre y descripcion del album para posteriormente actualizarlo y guardar 
+            los datos. Una ves echo esto nos redirecciona a la "/validado/albumes" y 
+            nos arrojara el mensaje mostrado.
+
+    1.13.I  Verificacion de edicion de los albumes.  (Captura Adjunta: 1.13-1.JPG, 
+ 	    1.13-2.JPG, 1.13-3.JPG  y 1.13-4.JPG ). 
+
+
+2.  CREANDO LA FUNCIONALIDAD PARA EDITAR UNA FOTO – MOVER Y COPIAR ARCHIVOS 
+
+    2.15    Explique: ¿Qué se hizo en esta función?
+	    Lo que hace esta funcion es llamar a la foto por su id y posteriormente 
+	    redireccionar al usuario a la ruta propuesta para posteriormente actualizar
+            el contenido.
+
+    2.22    ¿Qué estamos haciendo en las dos funciones principales de este Request? 
+	    En authorize() se comprobará si el usuario está autorizado a realizar esa 
+	    request y en rules() te da las reglas de la modificacion (requiere id, nombre,
+	    decripcion y una imagen con un maximo de 2 MB).
+
+    2.23    Explique Línea a línea lo que el código pretende hacer:
+	    LINEA 59 - Se implementa la funcion postActualizarFoto.
+	    LINEA 60 - Se obtiene el id de la Foto.
+	    LINEA 61 - Se obtiene el nombre de la Foto.
+	    LINEA 62 - Se obtiene la descripcion de la Foto.
+	    LINEA 63 - Revisa que exista una imagen.
+	    LINEA 64 - Solicita la imagen.
+	    LINEA 65 - Le asigna una ruta.
+	    LINEA 66 - Calcula el hash sha1. 
+	    LINEA 67 - Se obtiene la ruta y el nombre de la imagen.
+	    LINEA 68 - Obtiene la ruta anterior de la imagen.
+	    LINEA 69 - Declara un if para verificar que la linea anterior exista.
+	    LINEA 70 - Corchete.
+	    LINEA 71 - Borra el link anterior.
+	    LINEA 72 - Corchete.
+	    LINEA 73 - Nos dice que la ruta de la foto sea igual a la ruta y el nombre.
+	    LINEA 74 - Corchete.
+	    LINEA 75 - La foto sera guardada.
+	    LINEA 76 - Nos redirige a nuestro album para mostarnos un mensaje.
+	    LINEA 77 - Espacio.
+	    LINEA 78 - Corchete.
+
+	   Ahora explique: 
+	   Desde la línea 69 (el bloque if), ¿por qué tiene que verificarse que la ruta exista?. 
+	   Es necesario la verificación.
+	   Se tiene que verificar que exista, por que si no se hace simplemente el pograma nos 
+           podria redireccionar a una ruta inexistente y por ende generar un error. 
+	   Y si, es muy nesesario la implementacion de la verificacion.
+
+   2.24    ¿Qué hace el código de la vista
+	   Nos manda un mensaje dentro de un cuadro con el mensaje"Su foto fue editada".  
+
+
+   2.24-I  Verificacion de que las fotos pueden ser editadas.  (Captura Adjunta: 2.24-1.JPG, 
+ 	   2.24-2.JPG y 2.24-3.JPG ). 
+
+
+OBSERVACIONES Y CONCLUSIONES:
+
+OBSERVACIONES:
+   -El laboratorio genero un poco de errores al no fijarme en los "use" usados.
+   -En el laboratorio se le dio un diseño mejorado a las interfaces(aprobechando mejor los 
+    espacios), algo que en el anterior laboratorio pude implementar.
+   -El presente laboratorio no presento tantos errorres de sintaxis como anteriores.
+   -Hicimos analisis exhaustivos de codigo para ver como funciona el programa.
+   -Analisamos las funciones de request (que es lo que hacen). 
+
+CONCLUSIONES:
+   -Creamos la funcion para poder actualizar un album.
+   -Creamos la vista para acualizar un album.
+   -Ejecutamos y probamos el debido funcionamiento de las funciones implementadas.
+   -Estamos camino a desarrollar un CRUD tanto para fotos como para albumes.
+   -El espacio implementado en la aplicacion era mucho en comparacion al que nesesitamos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

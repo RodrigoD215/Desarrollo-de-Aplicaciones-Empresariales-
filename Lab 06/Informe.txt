@@ -1,0 +1,62 @@
+Desarrollo de Aplicaciones Empresariales
+Laboratorio 06
+
+
+Alumno: Rodrigo Dueñas del Carpio
+Grupo: A
+
+1. INSERTANDO ÁLBUMES EN LA BASE DE DATOS.
+
+   1.9     Creacion de nuevo album y verificacion.  (Captura Adjunta: 1.9.JPG
+	   y 1.9-1.JPG )
+
+
+2. INSERTANDO FOTOS EN LA BASE DE DATOS.
+ 
+   2.10    Subida de fotos a nuestros álbumes. (Captura Adjunta: 2.10.JPG, 
+           2.10-1.JPG y 2.10-2.JPG )
+
+
+OBSERVACIONES Y CONCLUSIONES:
+
+OBSERVACIONES:
+   -En caso de no tener hablilitado el permiso para php, el laboratorio nos 
+    brindo una guia de como hablilitarlo y solucionar el error que produce.
+   -El presente laboratorio no trajo muchas complicaciones como anteriores.
+   -Laravel es un framework muy amigable, puesto que nos genera practicamente 
+    todo (Lo unico complicado por asi decirse es la conexion e implementacion 
+    de la BD).
+   -Debemos de referenciar todo lo usado en la cabecera del documento, de lo
+    contrario generara errores.
+   -Hicimos uso de la función authorize para comprobar que el id de álbum le 
+    pertenece al usuario loggeado actualmente
+
+CONCLUSIONES:
+   -Implementamos las vistas nesesarias para crear foto y crear album.
+   -Creamos request para crear album y crear foto.
+   -Implementamos funciones en cada una de los controladores para nuestros 
+    objetivos de crear album y añadir fotos.
+   -Verificamos que los datos fueran ingresados con total exito en la BD.
+   -Le dimos un tamaño especifico (20 MB) a las imagenes requeridas para los 
+    albumes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
