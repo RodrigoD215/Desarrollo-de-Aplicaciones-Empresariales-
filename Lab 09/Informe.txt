@@ -1,0 +1,78 @@
+Desarrollo de Aplicaciones Empresariales
+Laboratorio 09
+
+
+Alumno: Rodrigo Dueñas del Carpio
+Grupo: A
+
+1. CREANDO LA FUNCIONALIDAD PARA ELIMINAR ÁLBUMES Y FOTOS.
+ 
+    1.1.P   ¿Será necesario usar un método getEliminarAlbum? 
+   	    No debido a que no nesesitamos obtener nada de este metodo.
+ 
+
+    1.6.I   Eliminar albumes (Captura Adjunta: 1.13-1.JPG y 1.13-4.JPG ). 
+
+    1.2.4.P ¿Qué hacen las dos funciones importantes en este request? 
+   	    En la primera está dando una autorización mientras que en la 
+	    segunda está verificando que exista el id de la foto.
+
+    1.2.5.P Investigue:  
+	    Cuál es la finalidad de la función unlink, file_exists y realpath. 
+
+	    -unlink — Borra un fichero.
+            -file_exists — Comprueba si existe un fichero o directorio.
+	    -realpath — Devuelve el nombre de la ruta absoluta canonizado.
+
+	    Tambien podemos encontrar otros tipos de realpath. 
+
+	    -realpath_cache_get — Obtiene las entradas de la caché de la ruta 
+	     real.
+	    -realpath_cache_size — Obtiene el tamaño de la caché de la ruta 
+	     real.
+
+    1.2.6.I Prueba eliminacion fotos(Captura Adjunta: 1.2.6-1.JPG y 1.2.6-2.JPG). 
+
+
+OBSERVACIONES Y CONCLUSIONES:
+
+OBSERVACIONES:
+   -Al momento de eliminar un album nos mostraba el mensaje"el album a sido 
+    actualizado" cuando habia sido eliminado.
+   -No hicimos uso del método. get para nada, todo lo contrario que con el 
+    método post.
+   -Se uso correctamente los alert-success y alert-danger en las vistas 
+    implementadas(esta observacion es echa en base en mi experiencia como 
+    usuario de algunas plataformas).
+   -Debemos de fijarnos bien en referenciar todo lo implementado en nuestro 
+    proyecto.
+   -El codigo del presente laboratorio fue mas entendible debido a que estamos
+    llevando PHP puro.
+
+CONCLUSIONES:
+   -Trabajamos la ultima parte del CRUD, la cual es la eliminacion de fotos 
+    y albumes.
+   -Eliminamos los metodos get debido a que no los íbamos a usar.
+   -Creamos request tanto para eliminar foto como para eliminar album.
+   -Investigamos la funcionalidad de diferentes funciones de PHP.
+   -Eliminamos albumes y fotos de nuestra BD.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
