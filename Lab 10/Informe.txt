@@ -1,0 +1,61 @@
+Desarrollo de Aplicaciones Empresariales
+Laboratorio 10
+
+
+Alumno: Rodrigo Dueñas del Carpio
+Grupo: A
+
+1. MEJORANDO EL PROYECTO.
+ 
+    1.4    Pruebe de código de modo que, los álbumes, se ordenen en columnas de 3 y
+	   las fotos en 4 columnas como máximo. (Captura Adjunta: 1.4.fotos.JPG y 
+           1.4.albumes.JPG ).
+ 
+    1.5.P  ¿Cuales son los detalles más resaltantes del código anterior?
+           En si que al momento de que el album sea eliminado nos redirigira a la
+           pestaña de albumes y nos mostrara un mensaje el cual dira "El album fue
+           eliminado".
+
+
+2. COMANDO PARA RE-ALIMENTAR LA BASE DE DATOS.
+
+    2.5    Prueba de funcionalidad del programa. (Carpeta Adjunta: Funcionamiento 
+           Programa ).  
+
+
+OBSERVACIONES Y CONCLUSIONES:
+
+OBSERVACIONES:
+   -A pesar de que los mensajes son detalles, decidi cambiarlos un poco para que no
+    sean tan simples.
+   -Se presento un error al hacer uso del comando "php artisan migrate:refresh –
+    seed".
+   -Hubiese sido bueno tratar un poco lo referente a diseño(Colores del programa).
+
+CONCLUSIONES:
+   -Se le dio cierto formato a las fotos y a los albumes al momento de ser mostrados.
+   -Se mejoro el aspecto visual de la pagina creada.
+   -Al momento de hacer uso del comando "php artisan migrate:refresh –seed", el 
+    programa me mando un mensaje el cual me decia que habia muchos argumentos. 
+    (Captura Adjunta: ErrorConclusiones.JPG ). 
+   -Probamos la funcionalidad completa del programa creado.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
